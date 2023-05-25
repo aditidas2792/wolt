@@ -1,9 +1,10 @@
-import openingHoursData from '../data/openingHoursData';
+import openingHoursData from "../data/openingHoursData";
 
 export const getOpeningHoursData = () => {
-    return new Promise((resolve) => {
-      setTimeout(() => {
-        resolve(openingHoursData);
-      }, 1000);
-    });
-  };
+  return new Promise((resolve) => {
+    // Simulate asynchronous behavior using setTimeout
+    setTimeout(() => {
+      resolve(openingHoursData);
+    }, 1000); // Resolve the promise after 1000 milliseconds (1 second)
+  });
+};
